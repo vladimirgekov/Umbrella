@@ -1,0 +1,283 @@
+.main {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 100px;
+  border: 1px solid black;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 0px
+}
+
+.subtitle {
+  display: flex
+}
+
+.subtitle-header {
+  font-size: 16px
+}
+
+.sbt-image {
+  margin-left: 8px
+}
+
+.subtitle-text {
+  font-size: 16px;
+  padding-left: 4px
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  box-shadow: 2px 1px 4px 2px lightgrey;
+}
+
+.main-part {
+  display: flex;
+}
+
+.secondary-part {
+  display: flex;
+}
+
+.user-choice {
+  background-color: orangered;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.number {
+  color: orangered;
+  font-size: 24px;
+  justify-content: center;
+  display: flex;
+  margin-top: 24px;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.info-logo {
+  width: 24px;
+  height: 24px;
+  margin-top: 20px
+}
+
+.rating-box {
+  margin: auto 20px;
+  text-align: center;
+}
+
+.rating-title {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.rating-stars {
+  padding-bottom: 15px;
+}
+
+.rating-ratio {
+  color: #FFD801;
+  font-size: 20px;
+}
+
+.bonus-box {
+  margin: 20px;
+  padding: 20px 60px;
+  background-color: lightgray;
+  border: 3px solid green;
+  border-radius: 8px;
+  border-block-start-style: none;
+}
+
+.exclusivite {    
+  width: fit-content;
+  padding: 5px 5px;
+  margin-top: -20px;
+  margin-left: -70px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+  text-transform: uppercase;
+}
+
+.bonus-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: -30px;
+  font-size: 20px
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  font-size: 24px;
+  font-family: inherit
+}
+
+.simple-text {
+  margin-top: 0px;
+  font-size: 23px;
+  font-family: inherit;
+}
+
+ul {
+  list-style-image: url('./images/check.svg');
+  margin: auto;
+}
+
+li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+button {
+  margin: auto 20px;
+  margin-left: 10px;
+  padding: 10px 50px;
+  background-color: limegreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.secondary-part {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.right-part {
+  display: flex
+}
+
+.left-part {
+  display: flex;
+  height: fit-content;
+}
+
+.boxes {
+  display: flex
+}
+
+.list-button {
+  display: flex
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding: 20px 40px
+  }
+  .logo {
+    padding: 20px 0px
+  }
+  .rating-box {
+    margin: 20px;
+  }
+  .bonus-box {
+    padding: 20px 30px
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .right-part {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 0px;
+    margin: 20px 0px;
+  }
+  .list-button {
+    flex-direction: column-reverse;
+  }
+  .bonus-box {
+    padding: 0px 10px
+  }
+  .bonus-title {
+    margin-top: -10px;
+  }
+  .exclusivite{
+    margin-left: -20px
+  }
+  ul {
+    display: flex
+  }
+  li {
+    width: 33%;
+    padding-left: 0px
+  }
+  button {
+    margin: 10px
+  }
+  .secondary-part {
+    font-size: 10px
+  }
+}
+
+@media only screen and (max-width: 654px) {
+  .container {
+    padding: 20px
+  }
+  .user-number {
+    display: flex;
+    height: fit-content;
+    z-index: 2;
+  }
+  .logo {
+    margin-left: -100px;
+    height: auto;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .rating-box {
+    margin-left: auto;
+  }
+  .bonus-box {
+    margin-left: -100px;
+    width: auto;
+  }
+  .list-button {
+    width: auto;
+    margin-left: -100px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li {
+    width: 100%;
+    padding-left: 10px
+  }
+  .right-part {
+    width: 80%;
+  }
+  .secondary-part {
+    font-size: 8px
+  }
+}
